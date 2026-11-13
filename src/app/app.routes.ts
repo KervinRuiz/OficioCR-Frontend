@@ -8,4 +8,8 @@ export const routes: Routes = [
   { path: 'pagos', title: 'Pagos · OficioCR', loadComponent: () => import('./pages/pagos.component').then(m => m.PagosComponent) },
   { path: 'asistente', title: 'Asistente IA · OficioCR', loadComponent: () => import('./pages/asistente.component').then(m => m.AsistenteComponent) },
   { path: '**', redirectTo: '' }
+import { CategoriasComponent } from './categorias/categorias.component';
+
+export const routes: Routes = [
+    {path: 'categorias', component: CategoriasComponent}
 ];
